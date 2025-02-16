@@ -22,3 +22,5 @@ class Block(models.Model):
         sha = hashlib.sha256()
         sha.update(f"{self.index}{self.previous_hash}{self.timestamp}{self.data}".encode('utf-8'))
         return sha.hexdigest()
+
+
