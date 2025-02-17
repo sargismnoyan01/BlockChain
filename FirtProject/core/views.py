@@ -10,13 +10,6 @@ from rest_framework import status
 from pprint import pprint
 
 
-
-
-def Home(request):
-    return None
-
-
-
 @api_view(['GET','POST'])
 def get_chain(request):
     if request.method =='GET':
